@@ -1,5 +1,9 @@
 <!DOCTYPE html>
-<html> <head> <style>
+<html> 
+	<head>
+		<header>MCombe Builds a Stack</header>
+		<title>making a stack</title>
+	<style>
     .flex-container {
       display: flex;  flex-direction:row;
       background-color: red;
@@ -17,20 +21,22 @@
 		 background-color: green;
 	  }
 	}
-</style></head>
-
-
-
+</style>
+</head>
+<input type="text" id="input">
 <body>
 		<div class="flex-container" id="target">
-		  <div>row item 1</div>   
-		  <div>row item 2</div>  
-		  <div>row item 3</div>  
+		  <div class="stack">row item 1</div>   
+		  <div class="stack">row item 2</div>  
+		  <div class="stack">row item 3</div>  
 		</div>
 	
 	<p> Press the button to create an new element of type div and then add it to the container.
 		</p>
-		<button onclick="makeNewDiv()">Add one</button>
+		<button onclick="makeNewDiv()">Push Value</button>
+		<button onclick="popItem()">Pop</button>
+		<button onclick="zap">Zap Value</button>
+
 	
 	
 </body>
@@ -38,12 +44,27 @@
 	function makeNewDiv(){
 		/* make the div and its text */
 		let element = document.createElement("p")
+		document.getElementById("input")
 		element.innerHTML = "an item after 3"
 		element.style.color = "orange"
 
 		/* add it to the container */
-		document.getElementById('target').appendChild(element)
+		document.getElementById('target').appendChild(element.innerHTML(input.value, className = "stack"))
 		
+	}
+	function popItem(){
+		var stackItems = document.getElementsByClassName("stack")
+		if (stackItems.length > 0){
+			stackItems.remove()
+		}
+	}
+	function zap(){
+		var x = document.getElementsByClassName("stack")
+		var y = document.getElementById("input")
+		for (x.value == y.value){
+			x[x].remove;
+		}
+
 	}
 </script>
 </html>	
