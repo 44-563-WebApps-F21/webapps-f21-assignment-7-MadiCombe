@@ -20,37 +20,53 @@
 <p id="distance">Distance is unknown</p>
 
 <div class="d-flex flex-row justify-content-start">
-    <img src="bush.jpg" id="bush">
-    <img src="him.jpg" id="him">
-    <img src="pileofdirt.jpg" id="dirt">
-    <img src="pileofdirt.jpg" id="dirt">
+    <img src="bush.jpg" id="bush1"onclick="check(0)">
+    <img src="bush.jpg" id="him1" onclick="check(1)">
+    <img src="pileofdirt.jpg" id="dirt1" onclick="check(2)">
+    <img src="pileofdirt.jpg" id="dirt2" onclick="check(3)">
 </div>
 <div class="d-flex flex-row justify-content-start">
-    <img src="bush.jpg" id="bush">
-    <img src="him.jpg" id="him">
-    <img src="pileofdirt.jpg" id="dirt">
-    <img src="pileofdirt.jpg" id="dirt">
+    <img src="bush.jpg" id="bush2" onclick="check(4)">
+    <img src="bush.jpg" id="him2" onclick="check(5)">
+    <img src="pileofdirt.jpg" id="dirt3" onclick="check(6)">
+    <img src="pileofdirt.jpg" id="dirt4" onclick="check(7)">
 </div><div class="d-flex flex-row justify-content-start">
-    <img src="bush.jpg" id="bush">
-    <img src="him.jpg" id="him">
-    <img src="pileofdirt.jpg" id="dirt">
-    <img src="pileofdirt.jpg" id="dirt">
+    <img src="bush.jpg" id="bush3" onclick="check(8)">
+    <img src="bush.jpg" id="him3" onclick="check(9)">
+    <img src="pileofdirt.jpg" id="dirt5" onclick="check(10)">
+    <img src="pileofdirt.jpg" id="dirt6" onclick="check(11)">
 </div><div class="d-flex flex-row justify-content-start">
-    <img src="bush.jpg" id="bush">
-    <img src="him.jpg" id="him">
-    <img src="pileofdirt.jpg" id="dirt">
-    <img src="pileofdirt.jpg" id="dirt">
+    <img src="bush.jpg" id="bush4" onclick="check(12)">
+    <img src="bush.jpg" id="him4" onclick="check(13)">
+    <img src="pileofdirt.jpg" id="dirt7" onclick="check(14)">
+    <img src="pileofdirt.jpg" id="dirt8" onclick="check(15)">
 </div><div class="d-flex flex-row justify-content-start">
-    <img src="bush.jpg" id="bush">
-    <img src="him.jpg" id="him">
-    <img src="pileofdirt.jpg" id="dirt">
-    <img src="pileofdirt.jpg" id="dirt">
+    <img src="bush.jpg" id="bush5" onclick="check(16)">
+    <img src="bush.jpg" id="him5" onclick="check(17)">
+    <img src="pileofdirt.jpg" id="dirt9" onclick="check(18)">
+    <img src="pileofdirt.jpg" id="dirt10" onclick="check(19)">
 </div><div class="d-flex flex-row justify-content-start">
-    <img src="bush.jpg" id="bush">
-    <img src="him.jpg" id="him">
-    <img src="pileofdirt.jpg" id="dirt">
-    <img src="pileofdirt.jpg" id="dirt">
+    <img src="bush.jpg" id="bush6" onclick="check(20)">
+    <img src="bush.jpg" id="him6" onclick="check(21)">
+    <img src="pileofdirt.jpg" id="dirt11" onclick="check(22)">
+    <img src="pileofdirt.jpg" id="dirt12" onclick="check(23)">
 </div>
-
+<script>
+  var ids = ["bush1", "him1", "dirt1", "dirt2", 
+  "bush2", "him2", "dirt3", "dirt4", 
+  "bush3", "him3", "dirt5", "dirt6", 
+  "bush4", "him4", "dirt7", "dirt8", 
+  "bush5", "him5", "dirt9", "dirt10", 
+  "bush6", "him6", "dirt11", "dirt12"];
+  var triesCount = 0
+  var animalLocation = 13
+  function check(position){
+      document.getElementById(ids[13])
+      document.getElementById("him4").outerHTML = Image("him.jpg")
+      triesCount ++
+      document.getElementById("tries").outerHTML = triesCount
+  }
+  function distance(pos1, pos2)
+</script>
 </body>
 </html>
